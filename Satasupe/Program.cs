@@ -28,7 +28,7 @@ namespace Satasupe
       _services = new ServiceCollection().BuildServiceProvider();
       _client.MessageReceived += CommandRecieved;
       //次の行に書かれているstring token = "hoge"に先程取得したDiscordTokenを指定する。
-      string token = "";
+      string token = "ODE0Mjg2NTg0NTA5MTA0MTc4.YDbpeg.1NJ1ktjboTNCLYlrn8jIwuiHYw8";
       await _commands.AddModulesAsync(Assembly.GetEntryAssembly(), _services);
       await _client.LoginAsync(TokenType.Bot, token);
       await _client.StartAsync();
